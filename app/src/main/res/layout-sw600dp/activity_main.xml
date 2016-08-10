@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thinkdifferent.movieapp.view.activity.MovieGridActivity">
+
+   <!--   movie grid view fragment-->
+    <fragment
+        android:id="@+id/fragment_movies_grid"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        class="com.thinkdifferent.movieapp.view.fragment.MovieGridFragment"
+        tools:layout="@layout/fragment_movie_grid" />
+
+  <!--  movie details fragment frame.-->
+    <FrameLayout
+        android:id="@+id/fragment_frame"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>

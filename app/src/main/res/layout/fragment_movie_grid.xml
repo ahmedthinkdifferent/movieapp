@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thinkdifferent.movieapp.view.fragment.MovieGridFragment">
+
+
+ <!--   movies gridview-->
+    <GridView
+        android:id="@+id/grid_movies"
+        android:stretchMode="columnWidth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+      <TextView
+          android:id="@+id/tv_error"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:text="No Internet Connection"
+          android:visibility="gone"
+          />
+
+    <Button
+        android:id="@+id/btn_try"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_error"
+        android:layout_centerInParent="true"
+        android:background="?attr/selectableItemBackground"
+        android:text="@string/try_again"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

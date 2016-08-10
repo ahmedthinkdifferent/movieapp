@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/layout_movie_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+
+        <TextView
+            android:id="@+id/tv_movie_title"
+            style="@style/Base.TextAppearance.AppCompat.Display2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/text1_background_color"
+            android:minHeight="120dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="8dp"
+            android:paddingTop="16dp"
+            android:textColor="@android:color/white"
+            tools:text="test movie." />
+
+
+        <TextView
+            android:id="@+id/tv_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_movie_title"
+            android:layout_marginTop="4dp"
+            android:background="@color/gray_color" />
+
+        <ImageView
+            android:id="@+id/iv_movie"
+            android:layout_width="130dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/tv_divider"
+            android:layout_marginLeft="16dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_movie_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_movie"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/iv_movie"
+            tools:text="2015" />
+
+        <TextView
+            android:id="@+id/tv_movie_rate"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_movie_date"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/iv_movie"
+            tools:text="2.8" />
+
+        <ImageView
+            android:id="@+id/iv_favourite"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/tv_movie_rate"
+            android:layout_toRightOf="@id/iv_movie"
+            android:padding="6dp"
+            android:src="@drawable/not_bookmarked"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_movie_overview"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_movie"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            tools:text="this moview is by ...." />
+
+        <TextView
+            android:id="@+id/tv_divider2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/tv_movie_overview"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#6E6B6B" />
+
+        <TextView
+            android:id="@+id/tv_movie_reviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_divider2"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/tv_trailer"
+            style="@style/Base.TextAppearance.AppCompat.Display1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_movie_reviews"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/trailers" />
+
+
+        <ListView
+            android:id="@+id/list_trailers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_trailer"
+            android:dividerHeight="1dp" />
+    </RelativeLayout>
+</ScrollView>

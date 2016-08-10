@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="row_data_count">3</integer>
+    <bool name="is_device_small">false</bool>
+
+</resources>
